@@ -7,6 +7,7 @@ package h264writer
 import (
 	"bytes"
 	"encoding/binary"
+	"fmt"
 	"io"
 	"os"
 
@@ -53,6 +54,7 @@ func (h *H264Writer) WriteRTP(packet *rtp.Packet) error {
 	if !h.hasKeyFrame {
 		if h.hasKeyFrame = isKeyFrame(packet.Payload); !h.hasKeyFrame {
 			// key frame not defined yet. discarding packet
+			fmt.Printf("Key frame not defined yet. Discarding packet\n")
 			return nil
 		}
 	}
