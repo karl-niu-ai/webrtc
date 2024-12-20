@@ -7,6 +7,7 @@
 package webrtc
 
 import (
+	"fmt"
 	"strings"
 	"sync"
 
@@ -298,6 +299,7 @@ func (s *TrackLocalStaticSample) WriteSample(sample media.Sample) error {
 	s.rtpTrack.mu.RUnlock()
 
 	if p == nil {
+		fmt.Printf("p is nil")
 		return nil
 	}
 
