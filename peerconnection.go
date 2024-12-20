@@ -2451,7 +2451,10 @@ func (pc *PeerConnection) startRTP(isRenegotiation bool, remoteDesc *SessionDesc
 
 	pc.startRTPReceivers(remoteDesc, currentTransceivers)
 	if haveApplicationMediaSection(remoteDesc.parsed) {
+		fmt.Printf("startRTP haveApplicationMediaSection\n")
 		pc.startSCTP()
+	} else {
+		fmt.Printf("startRTP !haveApplicationMediaSection\n")
 	}
 }
 
