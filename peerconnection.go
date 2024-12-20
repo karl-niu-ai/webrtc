@@ -590,13 +590,16 @@ func (pc *PeerConnection) hasLocalDescriptionChanged(desc *SessionDescription) b
 	for _, t := range pc.rtpTransceivers {
 		m := getByMid(t.Mid(), desc)
 		if m == nil {
+			fmt.Printf("mid not found: %s\n", t.Mid())
 			return true
 		}
 
 		if getPeerDirection(m) != t.Direction() {
+			fmt.Printf("direction mismatch: %s\n", t.Mid())
 			return true
 		}
 	}
+	fmt.Printf("local description has not changed\n")
 	return false
 }
 
@@ -701,6 +704,8 @@ func (pc *PeerConnection) CreateOffer(options *OfferOptions) (SessionDescription
 			SDP:    string(sdpBytes),
 			parsed: d,
 		}
+
+		fmt.Printf("new offer: %s\n", offer.SDP)
 
 		// Verify local media hasn't changed during offer
 		// generation. Recompute if necessary
