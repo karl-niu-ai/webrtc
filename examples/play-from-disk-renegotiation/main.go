@@ -15,10 +15,10 @@ import (
 	"os"
 	"time"
 
+	"github.com/karl-niu-ai/webrtc"
+	"github.com/karl-niu-ai/webrtc/pkg/media"
+	"github.com/karl-niu-ai/webrtc/pkg/media/ivfreader"
 	"github.com/pion/randutil"
-	"github.com/pion/webrtc/v4"
-	"github.com/pion/webrtc/v4/pkg/media"
-	"github.com/pion/webrtc/v4/pkg/media/ivfreader"
 )
 
 var peerConnection *webrtc.PeerConnection //nolint

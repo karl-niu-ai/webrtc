@@ -10,9 +10,9 @@ import (
 	"io"
 	"os"
 
+	"github.com/karl-niu-ai/webrtc/internal/util"
 	"github.com/pion/rtp"
 	"github.com/pion/rtp/codecs"
-	"github.com/pion/webrtc/v4/internal/util"
 )
 
 const (

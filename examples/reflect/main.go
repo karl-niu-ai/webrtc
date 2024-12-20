@@ -17,9 +17,9 @@ import (
 	"os"
 	"strings"
 
+	"github.com/karl-niu-ai/webrtc"
 	"github.com/pion/interceptor"
 	"github.com/pion/interceptor/pkg/intervalpli"
-	"github.com/pion/webrtc/v4"
 )
 
 // nolint:gocognit

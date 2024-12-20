@@ -18,8 +18,8 @@ import (
 	"syscall/js"
 	"time"
 
+	"github.com/karl-niu-ai/webrtc"
 	"github.com/pion/randutil"
-	"github.com/pion/webrtc/v4"
 )
 
 const messageSize = 15

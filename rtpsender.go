@@ -12,11 +12,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/karl-niu-ai/webrtc/internal/util"
 	"github.com/pion/interceptor"
 	"github.com/pion/randutil"
 	"github.com/pion/rtcp"
 	"github.com/pion/rtp"
-	"github.com/pion/webrtc/v4/internal/util"
 )
 
 type trackEncoding struct {

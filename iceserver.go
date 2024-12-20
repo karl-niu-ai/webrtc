@@ -9,8 +9,8 @@ package webrtc
 import (
 	"encoding/json"
 
+	"github.com/karl-niu-ai/webrtc/pkg/rtcerr"
 	"github.com/pion/stun/v3"
-	"github.com/pion/webrtc/v4/pkg/rtcerr"
 )
 
 // ICEServer describes a single STUN and TURN server that can be used by

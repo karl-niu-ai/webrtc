@@ -15,9 +15,9 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/karl-niu-ai/webrtc/pkg/rtcerr"
 	"github.com/pion/datachannel"
 	"github.com/pion/logging"
-	"github.com/pion/webrtc/v4/pkg/rtcerr"
 )
 
 const dataChannelBufferSize = math.MaxUint16 // message size limit for Chromium
