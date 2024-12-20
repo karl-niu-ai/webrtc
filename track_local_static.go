@@ -175,11 +175,9 @@ func (s *TrackLocalStaticRTP) writeRTP(p *rtp.Packet) error {
 
 	writeErrs := []error{}
 
-	fmt.Printf("Writing RTP packet to %d bindings\n", len(s.bindings))
 	for _, b := range s.bindings {
 		p.Header.SSRC = uint32(b.ssrc)
 		p.Header.PayloadType = uint8(b.payloadType)
-		fmt.Printf("Writing RTP packet to %s: %T\n", b.id, b.writeStream)
 		if _, err := b.writeStream.WriteRTP(&p.Header, p.Payload); err != nil {
 			writeErrs = append(writeErrs, err)
 		}

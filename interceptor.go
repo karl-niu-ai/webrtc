@@ -7,7 +7,6 @@
 package webrtc
 
 import (
-	"fmt"
 	"sync/atomic"
 
 	"github.com/pion/interceptor"
@@ -145,11 +144,9 @@ type interceptorToTrackLocalWriter struct{ interceptor atomic.Value } // interce
 
 func (i *interceptorToTrackLocalWriter) WriteRTP(header *rtp.Header, payload []byte) (int, error) {
 	if writer, ok := i.interceptor.Load().(interceptor.RTPWriter); ok && writer != nil {
-		fmt.Printf("WriteRTP: %v\n", header)
 		return writer.Write(header, payload, interceptor.Attributes{})
 	}
 
-	fmt.Printf("WriteRTP: no writer\n")
 	return 0, nil
 }
 
