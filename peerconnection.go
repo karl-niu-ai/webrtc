@@ -2443,6 +2443,8 @@ func (pc *PeerConnection) startTransports(iceRole ICERole, dtlsRole DTLSRole, re
 
 // nolint: gocognit
 func (pc *PeerConnection) startRTP(isRenegotiation bool, remoteDesc *SessionDescription, currentTransceivers []*RTPTransceiver) {
+	fmt.Printf("startRTP isRenegotiation=%v remoteDesc=%v currentTransceivers=%v\n", isRenegotiation, remoteDesc, currentTransceivers)
+
 	if !isRenegotiation {
 		pc.undeclaredMediaProcessor()
 	}

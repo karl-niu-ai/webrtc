@@ -300,7 +300,6 @@ func (s *TrackLocalStaticSample) WriteSample(sample media.Sample) error {
 	s.rtpTrack.mu.RUnlock()
 
 	if p == nil {
-		fmt.Printf("p is nil")
 		return nil
 	}
 
@@ -322,7 +321,6 @@ func (s *TrackLocalStaticSample) WriteSample(sample media.Sample) error {
 		}
 	}
 
-	fmt.Printf("writeErrs: %v", writeErrs)
 	return util.FlattenErrs(writeErrs)
 }
 

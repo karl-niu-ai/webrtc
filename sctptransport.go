@@ -8,6 +8,7 @@ package webrtc
 
 import (
 	"errors"
+	"fmt"
 	"io"
 	"math"
 	"sync"
@@ -310,6 +311,7 @@ func (r *SCTPTransport) OnDataChannelOpened(f func(*DataChannel)) {
 }
 
 func (r *SCTPTransport) onDataChannel(dc *DataChannel) (done chan struct{}) {
+	fmt.Printf("onDataChannel\n")
 	r.lock.Lock()
 	r.dataChannels = append(r.dataChannels, dc)
 	r.dataChannelsAccepted++
