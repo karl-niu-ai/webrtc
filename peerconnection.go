@@ -709,7 +709,7 @@ func (pc *PeerConnection) CreateOffer(options *OfferOptions) (SessionDescription
 
 		// Verify local media hasn't changed during offer
 		// generation. Recompute if necessary
-		if isPlanB || !pc.hasLocalDescriptionChanged(&offer) {
+		if isPlanB /*|| !pc.hasLocalDescriptionChanged(&offer)*/ {
 			break
 		}
 		count++
