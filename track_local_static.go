@@ -7,7 +7,6 @@
 package webrtc
 
 import (
-	"fmt"
 	"strings"
 	"sync"
 
@@ -312,7 +311,6 @@ func (s *TrackLocalStaticSample) WriteSample(sample media.Sample) error {
 		p.SkipSamples(samples * uint32(sample.PrevDroppedPackets))
 	}
 	packets := p.Packetize(sample.Data, samples)
-	fmt.Printf("Wrote %d samples into %d packets.\n", samples, len(packets))
 
 	writeErrs := []error{}
 	for _, p := range packets {
