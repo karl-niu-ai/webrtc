@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/pkg/media"
+	"github.com/karl-niu-ai/webrtc/pkg/media"
 	"github.com/pion/interceptor"
 	mock_interceptor "github.com/pion/interceptor/pkg/mock"
 	"github.com/pion/rtp"

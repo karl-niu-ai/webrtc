@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/internal/fmtp"
+	"github.com/karl-niu-ai/webrtc/internal/fmtp"
 	"github.com/pion/rtp"
 	"github.com/pion/rtp/codecs"
 	"github.com/pion/sdp/v3"

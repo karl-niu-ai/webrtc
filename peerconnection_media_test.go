@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/internal/util"
-	"github.com/karl-niu-ai/webrtc/v4/pkg/media"
+	"github.com/karl-niu-ai/webrtc/internal/util"
+	"github.com/karl-niu-ai/webrtc/pkg/media"
 	"github.com/pion/logging"
 	"github.com/pion/rtcp"
 	"github.com/pion/rtp"

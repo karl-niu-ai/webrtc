@@ -8,7 +8,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/pkg/media"
+	"github.com/karl-niu-ai/webrtc/pkg/media"
 	"github.com/pion/rtp"
 )
 

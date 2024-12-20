@@ -19,9 +19,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/internal/mux"
-	"github.com/karl-niu-ai/webrtc/v4/internal/util"
-	"github.com/karl-niu-ai/webrtc/v4/pkg/rtcerr"
+	"github.com/karl-niu-ai/webrtc/internal/mux"
+	"github.com/karl-niu-ai/webrtc/internal/util"
+	"github.com/karl-niu-ai/webrtc/pkg/rtcerr"
 	"github.com/pion/dtls/v3"
 	"github.com/pion/dtls/v3/pkg/crypto/fingerprint"
 	"github.com/pion/interceptor"

@@ -18,7 +18,7 @@ import (
 	"syscall/js"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4"
+	"github.com/karl-niu-ai/webrtc"
 	"github.com/pion/randutil"
 )
 

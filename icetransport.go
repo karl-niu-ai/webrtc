@@ -13,8 +13,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/internal/mux"
-	"github.com/karl-niu-ai/webrtc/v4/internal/util"
+	"github.com/karl-niu-ai/webrtc/internal/mux"
+	"github.com/karl-niu-ai/webrtc/internal/util"
 	"github.com/pion/ice/v4"
 	"github.com/pion/logging"
 )

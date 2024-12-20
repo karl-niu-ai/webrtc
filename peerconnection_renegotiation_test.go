@@ -18,9 +18,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/internal/util"
-	"github.com/karl-niu-ai/webrtc/v4/pkg/media"
-	"github.com/karl-niu-ai/webrtc/v4/pkg/rtcerr"
+	"github.com/karl-niu-ai/webrtc/internal/util"
+	"github.com/karl-niu-ai/webrtc/pkg/media"
+	"github.com/karl-niu-ai/webrtc/pkg/rtcerr"
 	"github.com/pion/rtp"
 	"github.com/pion/transport/v3/test"
 	"github.com/stretchr/testify/assert"

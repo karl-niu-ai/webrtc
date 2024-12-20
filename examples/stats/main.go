@@ -19,7 +19,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4"
+	"github.com/karl-niu-ai/webrtc"
 	"github.com/pion/interceptor"
 	"github.com/pion/interceptor/pkg/stats"
 )

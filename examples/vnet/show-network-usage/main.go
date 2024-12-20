@@ -15,7 +15,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4"
+	"github.com/karl-niu-ai/webrtc"
 	"github.com/pion/logging"
 	"github.com/pion/transport/v3/vnet"
 )

@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/internal/util"
+	"github.com/karl-niu-ai/webrtc/internal/util"
 	"github.com/pion/interceptor"
 	"github.com/pion/randutil"
 	"github.com/pion/rtcp"

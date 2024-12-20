@@ -10,7 +10,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/karl-niu-ai/webrtc/v4/internal/util"
+	"github.com/karl-niu-ai/webrtc/internal/util"
 	"github.com/pion/rtp"
 	"github.com/pion/rtp/codecs"
 )

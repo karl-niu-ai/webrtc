@@ -6,7 +6,7 @@ package webrtc
 import (
 	"testing"
 
-	"github.com/karl-niu-ai/webrtc/v4/pkg/rtcerr"
+	"github.com/karl-niu-ai/webrtc/pkg/rtcerr"
 	"github.com/stretchr/testify/assert"
 )
 

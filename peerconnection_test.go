@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/pkg/rtcerr"
+	"github.com/karl-niu-ai/webrtc/pkg/rtcerr"
 	"github.com/pion/sdp/v3"
 	"github.com/pion/transport/v3/test"
 	"github.com/stretchr/testify/assert"

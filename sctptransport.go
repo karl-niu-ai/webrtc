@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karl-niu-ai/webrtc/v4/pkg/rtcerr"
+	"github.com/karl-niu-ai/webrtc/pkg/rtcerr"
 	"github.com/pion/datachannel"
 	"github.com/pion/logging"
 	"github.com/pion/sctp"
