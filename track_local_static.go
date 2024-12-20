@@ -293,6 +293,7 @@ func (s *TrackLocalStaticSample) Unbind(t TrackLocalContext) error {
 // all PeerConnections. The error message will contain the ID of the failed
 // PeerConnections so you can remove them
 func (s *TrackLocalStaticSample) WriteSample(sample media.Sample) error {
+	fmt.Printf("WriteSample")
 	s.rtpTrack.mu.RLock()
 	p := s.packetizer
 	clockRate := s.clockRate
@@ -321,6 +322,7 @@ func (s *TrackLocalStaticSample) WriteSample(sample media.Sample) error {
 		}
 	}
 
+	fmt.Printf("writeErrs: %v", writeErrs)
 	return util.FlattenErrs(writeErrs)
 }
 
