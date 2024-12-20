@@ -21,14 +21,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/karl-niu-ai/webrtc/v4/internal/util"
+	"github.com/karl-niu-ai/webrtc/v4/pkg/media"
 	"github.com/pion/logging"
 	"github.com/pion/rtcp"
 	"github.com/pion/rtp"
 	"github.com/pion/sdp/v3"
 	"github.com/pion/transport/v3/test"
 	"github.com/pion/transport/v3/vnet"
-	"github.com/pion/webrtc/v4/internal/util"
-	"github.com/pion/webrtc/v4/pkg/media"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -1616,7 +1616,7 @@ func TestPeerConnection_Simulcast_RTX(t *testing.T) {
 // Everytime we receive a new SSRC we probe it and try to determine the proper way to handle it.
 // In most cases a Track explicitly declares a SSRC and a OnTrack is fired. In two cases we don't
 // know the SSRC ahead of time
-// * Undeclared SSRC in a single media section (https://github.com/pion/webrtc/issues/880)
+// * Undeclared SSRC in a single media section (https://github.com/karl-niu-ai/webrtc/issues/880)
 // * Simulcast
 //
 // The Undeclared SSRC processing code would run before Simulcast. If a Simulcast Offer/Answer only

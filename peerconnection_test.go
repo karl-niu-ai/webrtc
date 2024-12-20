@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/karl-niu-ai/webrtc/v4/pkg/rtcerr"
 	"github.com/pion/sdp/v3"
 	"github.com/pion/transport/v3/test"
-	"github.com/pion/webrtc/v4/pkg/rtcerr"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -272,7 +272,7 @@ func TestPeerConnection_GetConfiguration(t *testing.T) {
 	assert.Equal(t, expected.RTCPMuxPolicy, actual.RTCPMuxPolicy)
 	// nolint:godox
 	// TODO(albrow): Uncomment this after #513 is fixed.
-	// See: https://github.com/pion/webrtc/issues/513.
+	// See: https://github.com/karl-niu-ai/webrtc/issues/513.
 	// assert.Equal(t, len(expected.Certificates), len(actual.Certificates))
 	assert.Equal(t, expected.ICECandidatePoolSize, actual.ICECandidatePoolSize)
 	assert.NoError(t, pc.Close())

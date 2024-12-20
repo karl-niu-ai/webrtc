@@ -17,9 +17,9 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/karl-niu-ai/webrtc/v4"
 	"github.com/pion/interceptor"
 	"github.com/pion/interceptor/pkg/intervalpli"
-	"github.com/pion/webrtc/v4"
 )
 
 func main() { // nolint:gocognit

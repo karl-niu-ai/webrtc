@@ -10,8 +10,8 @@ package webrtc
 import (
 	"syscall/js"
 
+	"github.com/karl-niu-ai/webrtc/v4/pkg/rtcerr"
 	"github.com/pion/ice/v4"
-	"github.com/pion/webrtc/v4/pkg/rtcerr"
 )
 
 // PeerConnection represents a WebRTC connection that establishes a
@@ -166,7 +166,7 @@ func (pc *PeerConnection) checkConfiguration(configuration Configuration) error 
 		}
 	}
 
-	// https://github.com/pion/webrtc/issues/513
+	// https://github.com/karl-niu-ai/webrtc/issues/513
 	// https://www.w3.org/TR/webrtc/#set-the-configuration (step #4)
 	// if len(configuration.Certificates) > 0 {
 	// 	if len(configuration.Certificates) != len(existingConfiguration.Certificates) {
